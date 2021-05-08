@@ -1,0 +1,116 @@
+html {
+    
+    font-family:Arial;
+    background: linear-gradient(white, lightgrey);
+    background-repeat: no-repeat;
+}
+h1 {
+	color:red;
+	transition: all 0.3s ease-in-out;
+	text-shadow: grey 1px 1px 5px;
+	font-size: 500%;
+	margin:0px;
+}
+h1:hover{
+	transform:scale(1.05);
+	text-shadow: grey 1px 1px 7px;
+
+}
+#header {
+	width: 85%;
+	height : 100px;
+	margin: 0.5% auto;
+
+	background-color: #EDEDED;
+	text-align: center;
+	align-content: center;
+	line-height: 500%;
+	box-shadow: 3px 3px 5px #999999;
+	border-radius:10px;
+	
+}
+
+.cards {
+	width:30%;
+	height: 500px;
+	margin: 2.5%;
+	background-color: #EDEDED;
+	text-align: center;
+	align-content: center;
+	box-shadow: 5px 5px 20px #CFCFCF;
+	transition: all .25s ease-in-out;
+	border-radius: 50px;
+	font-size: 250%;
+	text-align: left;
+
+
+
+
+}
+
+
+.cards:hover{
+	transform: scale(1.1);
+	box-shadow: 10px 10px 20px #CFCFCF;
+
+}
+.cardsText{
+	margin-left: 5%;
+}
+
+h2 {
+	width: 90%;
+	margin: auto;
+	position: relative;
+	top: 10px;
+	background-color: orange;
+	
+	border: 0px black solid;
+	border-radius: 15px;
+	font-size:2vw;
+	text-align:center;
+	
+	
+	
+
+}
+
+
+
+
+
+html {
+	
+overflow-y: hidden;
+
+}
+
+#cardsBox {
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#background {
+	width: 1000px;
+	height:100%;
+	margin: auto;
+	background-color: red
+
+	
+}
+
+
+@media screen and (max-width: 1024px){
+	.cards {
+	width:70%;
+	
+}
+	h2 {
+		font-size:5vw;
+	}
+	html{
+		overflow-y: auto;
+	}
+}

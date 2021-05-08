@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html id='html'>
+<head>
+	<title>BeeConnect</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media='screen'>
+	<script type="text/javascript"src='ratio.js'></script>
+	<script type="text/javascript" src='api.js'></script>
+</head>
+<body>
+
+
+<div id="header">
+	<h1 id='test'>BeeConnect</h1>
+</div>
+<div id='cardsBox'>
+	<div class="cards">
+		
+			<h2>Température</h2>
+			<h3 class='cardsText', id='temperature'>{{ temperature }}</h3>
+			<p class='cardsText'>{{ tempstate }}</p>
+		
+	</div>
+
+	<div class="cards">
+		
+			<h2>Humiditée</h2>
+			<h3 class='cardsText' id='humiditee'>{{ humiditee }}</h3>
+			<p class='cardsText'>{{ humistate }}</p>
+		
+	</div>
+
+	<div class="cards">
+		
+			<h2>Pluie</h2>
+			<h3 class='cardsText' id='pluie'>{{ pluie }}</h3>
+			<p class='cardsText'>{{ pluistate }}</p>
+		
+	</div>
+
+	<div class="cards">
+		
+			<h2>Poids</h2>
+			<h3 class='cardsText' id='poids'>{{ poids }}</h3>
+			<p class='cardsText'>{{ poidstate }}</p>
+		
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+html {
+	font-family: Arial;
+}
+
+h1 {
+	color:red;
+}
+#header {
+	width: 85%;
+	height : 100px;
+	margin: auto;
+	background-color: #EDEDED;
+	text-align: center;
+	align-content: center;
+	box-shadow: 3px 3px 5px #999999;
+	border-radius:10px;
+	
+}
+
+.cards {
+	width:30%;
+	height: 500px;
+	margin: 40px;
+	background-color: #EDEDED;
+	text-align: center;
+	align-content: center;
+	box-shadow: 5px 5px 20px #CFCFCF;
+	transition: all .25s ease-in-out;
+	border-radius: 50px;
+
+
+
+}
+
+
+.cards:hover{
+	transform: scale(1.1);
+	box-shadow: 10px 10px 20px #CFCFCF;
+}
+
+h2 {
+	width: 90%;
+	margin: auto;
+	position: relative;
+	top: 10px;
+	background-color: orange;
+	
+	border: 0px black solid;
+	border-radius: 15px;
+	font-size:2vw;
+	
+	
+	
+
+}
+
+
+
+
+
+html {
+	
+overflow-y: hidden;
+
+}
+
+#cardsBox {
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#background {
+	width: 100%;
+	height:400px;
+	margin: auto;
+	background: linear-gradient(white, lightgrey)
+	
+}
+
+
+@media screen and (max-width: 1024px){
+	.cards {
+	width:70%;
+	
+}
+	h2 {
+		font-size:5vw;
+	}
+	html{
+		overflow-y: auto;
+	}
+}
