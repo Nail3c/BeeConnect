@@ -12,7 +12,7 @@ function ratio (){
 	for (let i =0; i<cardsBox.length; i++){
 		let hei = (cardsBox[i].offsetWidth*0.6).toString()
 		cardsBox[i].style.height = hei+'px'
-		console.log('done ' + hei)
+
 	}
 	let html = document.getElementById('html')
 	

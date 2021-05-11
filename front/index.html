@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media='screen'>
 	<script type="text/javascript"src='ratio.js'></script>
 	<script type="text/javascript" src='api.js'></script>
+	<script type="text/javascript" src='resize.js'></script>
 </head>
 <body>
 
@@ -13,41 +14,52 @@
 <div id="header">
 	<h1 id='test'>BeeConnect</h1>
 </div>
+
 <div id='cardsBox'>
-	<div class="cards">
+	
+	<div class="cards"  onClick="resize(document.getElementById('cardsBox'),0)">
 		
 			<h2>Température</h2>
 			<h3 class='cardsText', id='temperature'>{{ temperature }}</h3>
-			<p class='cardsText'>{{ tempstate }}</p>
+			<p class='cardsText'>Dernier relevée : {{ tempsate }}</p>
 		
 	</div>
-
-	<div class="cards">
+	
+	
+	<div class="cards" onClick="resize(document.getElementById('cardsBox'),1)">
 		
 			<h2>Humiditée</h2>
 			<h3 class='cardsText' id='humiditee'>{{ humiditee }}</h3>
-			<p class='cardsText'>{{ humistate }}</p>
+			<p class='cardsText'>Dernier relevée : {{ humistate }}</p>
 		
 	</div>
-
-	<div class="cards">
+	
+	
+	<div class="cards"onClick="resize(document.getElementById('cardsBox'),2)">
 		
 			<h2>Pluie</h2>
 			<h3 class='cardsText' id='pluie'>{{ pluie }}</h3>
-			<p class='cardsText'>{{ pluistate }}</p>
+			<p class='cardsText'>Dernier relevée : {{ pluistate }}</p>
 		
 	</div>
-
-	<div class="cards">
+	
+	
+	<div class="cards"onClick="resize(document.getElementById('cardsBox'),3)">
 		
 			<h2>Poids</h2>
 			<h3 class='cardsText' id='poids'>{{ poids }}</h3>
-			<p class='cardsText'>{{ poidstate }}</p>
+			<p class='cardsText'>Dernier relevée : {{ poidstate }}</p>
 		
 	</div>
+	
 </div>
 
-
+<div id='midDiv' onClick="resize(document.getElementById('cardsBox'),-1,document.getElementById('wrap1'))">
+	<h2>{{ title }}</h2>
+			<h3 class='cardsText'>{{ content }}</h3>
+			<p class='cardsText'>Dernier relevée : {{ tempsate }}</p>
+			<p class='cardsText'>Capteur utilisé : {{ capteur }}<br>Fiabilitée : {{ fiabilitée }}</p>
+</div>
 
 
 </body>

@@ -13,7 +13,7 @@ function test (){
 	})
 }
 window.onload= document.write(test())*/
-var a;
+
 fetch("http://localhost:8080/data")
 .then(response => response.json())
 .then(response => {
@@ -37,8 +37,15 @@ pluiee.innerHTML = pluiee.innerHTML
 var poid = document.getElementById("poids") ;
 poid.innerHTML = poid.innerHTML
 			.replace('{{ poids }}', JSON.parse(JSON.stringify(response)).weig)
+var midDiv= document.getElementById("midDiv")
+midDiv.innerHTML=midDiv.innerHTML
+			.replace('{{ temperature }}', JSON.parse(JSON.stringify(response)).temp)
+			.replace('{{ humiditee }}', JSON.parse(JSON.stringify(response)).humi)
+			.replace('{{ pluie }}', JSON.parse(JSON.stringify(response)).rain)
+			.replace('{{ poids }}', JSON.parse(JSON.stringify(response)).weig)
 
 
 
 })
 .catch(error => alert("Erreur : " + error));
+
